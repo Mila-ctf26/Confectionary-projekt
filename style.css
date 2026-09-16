@@ -69,7 +69,7 @@ font-family: Rammetto One,
     font-size: 100px;
     font-weight: 400;
     line-height: 92px;
-    letter-spacing: -0.03em;
+    letter-spacing: 0;
     color:white;
     align-self: center;
 
@@ -79,6 +79,7 @@ font-family: Rammetto One,
 }
 .hero-right {
     margin-left: -100px;
+    position: relative;
 }
 
 .tagline {
@@ -98,4 +99,53 @@ font-family: Rammetto One,
     margin-bottom: -40px;
     width: calc(100% + 80px);
     margin-left: -40px;
+}
+.order-btn {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-color: #F345D6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Inter",
+    sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+
+    top: -30px;
+    right: 40px;
+   z-index: 1;
+}
+.order-btn::before,
+.order-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: ripple 2s infinite;
+    z-index: -1;
+
+}
+.order-btn::after {
+    animation-delay: 1s;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }
