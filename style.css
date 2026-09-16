@@ -149,3 +149,54 @@ font-family: Rammetto One,
         opacity: 0;
     }
 }
+
+aside {
+    background-color: #FFF0F8;
+}
+
+.info {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 40px;
+    text-align: center;
+}
+.info h2 {
+    font-family: "Rammetto One",
+    sans-serif;
+    color: #361C8E;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.info-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.info-items div {
+    flex: 1;
+}
+.info-items h3 {
+    font-family: "Playball",
+    cursive;
+    color: #F345D6;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 12px;
+}
+.info-items p {
+   font-family: "Inter",
+    sans-serif;
+    font-size: 16px; 
+    line-height: 1.5;
+    color: #361C8E;
+}
+footer {
+    background-color:#361C8E;
+    color: white;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter",
+    sans-serif;
+    font-size: 14px;
+}
